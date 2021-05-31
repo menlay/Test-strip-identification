@@ -1,0 +1,538 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+.lr_auto{margin-left:auto;margin-right:auto;}
+.pad-bt0{
+    padding-bottom:0 !important; 
+}
+
+.red{color:red;}
+.hide{display:none;}
+.text-center {text-align:center;}
+.w_100{width:100% !important;}
+.w_80{width:80% !important;}
+.w_40{width:40% !important;}
+.color_r{color:red;}
+.bold{font-weight:bold;}
+.bg_color_gray {
+    background-color: gray !important;
+}
+h1 {
+    text-align: center;
+    color: #3C3C3C;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 100;
+    background-color: #3385ff;
+    padding: 10px 0;
+    color: #fff;
+}
+
+pre {
+    font-family: inherit;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+body {
+    font-family: "microsoft yahei";
+    color: #3c3c3c;
+    background: #f5f5f5;
+}
+
+.logo {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+    min-height: 52px
+}
+
+    .logo img {
+        height: 100%
+    }
+
+.next_inputbox {
+    border: 1px dotted #ddd !important;
+    background-color: #fafafa !important;
+    box-sizing: border-box;
+    width: 100% !important;
+}
+
+input[type="text"],
+input[type="date"], input[type="password"] {
+    border: 1px solid #ddd;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 5px;
+    font-family: "microsoft yahei";
+}
+
+select {
+    border: 1px solid #ddd;
+    height: 26px;
+    line-height: 26px;
+}
+
+textarea {
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+input[type='radio'], input[type='checkbox'] {
+    vertical-align: middle;
+    margin-left: 8px;
+}
+    button,input[type='button'] {
+    width: 100%;
+    height: 34px;
+    color: #fff;
+    letter-spacing: 1px; 
+    outline: medium;
+    *border-bottom: 0;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border: none;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.save_form {
+    background: #3385ff; 
+}
+.loginOut {
+    background: red; 
+} 
+
+input[type="submit"]:disabled {
+    background-color: #ddd;
+}
+.btnDisabled {
+    background-color: #ddd !important;
+}
+
+@media screen and (max-width: 960px) {
+    /* 手机端CSS代码 */
+    body {
+        font-size: 14px;
+        background-color: #f5f5f5;
+    }
+
+    h1 {
+        font-size: 18px;
+        background-color: #3385ff;
+        margin-top: 0;
+        padding: 10px 0;
+        color: #fff;
+    }
+
+    .login_bg {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20%;
+        background: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    .Table_list {
+        width: 100%;
+        margin: 0 auto;
+        /*margin-top: 10px;*/
+    }
+
+    .Login_list {
+        width: 100%;
+        margin: 0 auto;
+        /*margin-top: 10px;*/
+    }
+
+        .Login_list.row {
+            margin-bottom: 5px;
+        }
+
+    .login_table .box {
+        /*box-shadow: 3px 1px 5px #DDDDDD;*/
+        margin: 10px 0;
+    }
+
+    .row:not(.login) {
+        background: #fff;
+        margin-bottom: 10px;
+        /*box-shadow: 3px 1px 5px #DDDDDD;*/ 
+        overflow: hidden;
+        padding: 5px 2%;
+        /*border-bottom: 1px solid #ddd;*/
+        padding-bottom: 10px;
+    }
+
+    .textlist {
+        margin-bottom: 10px;
+        box-shadow: 3px 1px 5px #DDDDDD;
+        padding-bottom: 5px;
+        background-color: #fff;
+    }
+
+    .textlist .row {
+        margin-bottom: 4px;
+        box-shadow: none;
+        padding: 0px 2%;
+    }
+
+    #DJInfo .row .th_right {
+        border: 1px solid #ddd;
+        border-radius: 2px;
+    }
+
+    #DJInfo .row .th_right .item {
+        padding: 5px 0;
+        border-top: 1px solid #ddd;
+    }
+
+    #DJInfo .row .th_right .item:first-child {
+        border-top: none;
+    }
+
+    .row.login {
+        background: #fff;
+        margin-bottom: 3px;
+        width: 96%;
+        overflow: hidden;
+        padding: 5px 2%;
+    }
+
+    .row.login.password {
+        box-shadow: 3px 1px 5px #DDDDDD;
+    }
+
+    .row.login .th_left {
+        width: 70px;
+        float: left;
+        text-align: right;
+        line-height: 30px;
+    }
+
+    .row.login .th_right {
+        width: calc(100% - 70px);
+        float: left;
+        line-height: 26px;
+    }
+
+    .login_table .code-img { 
+        position: absolute; 
+        top: 1px;
+        right: 4px;
+        font-style: oblique; 
+        cursor: pointer;
+        font-size: 14px;
+        word-spacing: 8px;
+        letter-spacing: 5px;
+        text-indent: 5px; 
+        background-color: #fff;
+        line-height: 24px;
+    }
+
+    .content .login-form .code-img img {
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .Table_list .th_left {
+        width: 96%;
+        text-align: left;
+        line-height: 32px;
+        overflow: hidden;
+    }
+
+    .Table_list .item {
+        margin-bottom: 3px;
+    }
+
+    .row .th_left.phone {
+        width: 110px;
+        float: left;
+        line-height: 30px;
+        text-align: right;
+    }
+
+    .row .th_right.phone {
+        width: calc(100% - 110px);
+        float: left;
+    }
+
+
+    .Table_list .th_left .red {
+        color: #ff0000;
+        font-size: 16px;
+        vertical-align: top;
+    }
+
+
+    .Table_list .th_right {
+        width: 100%;
+        text-align: left;
+        float: left;
+        line-height: 30px;
+        overflow: hidden;
+    }
+
+    .explain {
+        font-size: 14px;
+    }
+
+        .explain img {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="password"] {
+        width: 100%;
+        box-sizing: border-box;
+        outline: none;
+        height: 32px;
+        line-height: 32px;
+        -webkit-appearance: none;
+    }
+
+    input[readonly="readonly"] {
+        line-height: 32px;
+        line-height: 32px;
+        height: 26px;
+        color: #3c3c3c;
+        font-size: 14px
+    }
+
+    input[disabled="disabled"] {
+        background-color: #fafafa;
+        color: #3c3c3c;
+        font-size: 14px
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="password"] {
+        border-radius: 4px;
+        outline: none;
+        height: 32px;
+        line-height: 32px;
+        margin-bottom:4px;
+    }
+
+    select {
+        width: 100%;
+        border-radius: 4px;
+        padding: 2px 0;
+        margin-bottom: 5px;
+        outline: none;
+        height: 32px;
+        line-height: 32px;
+    }
+
+    textarea {
+        border-radius: 4px;
+        height: 50px;
+        width: 100%;
+        -webkit-appearance: none;
+    }
+
+    .btn_div {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .Table_list {
+        margin-bottom: 40px;
+    }
+
+    .btn_div.fixed {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .btn_div.fixed button {
+        margin-bottom: 0px;
+        border-radius: 0;
+        height: 42px;
+        line-height: 42px;
+    }
+
+    button, .login_btn .save_form {
+        font-size: 16px;
+        height: 42px;
+        line-height: 42px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    body {
+        font-size: 14px !important;
+    }
+
+    /* 电脑端CSS代码 */
+    .Table_list, .Login_list {
+        width: 960px;
+        margin: 0 auto;
+        background: #fdfdfd;
+        margin-top: 10px;
+        padding: 10px 15px 20px 15px;
+        box-shadow: 5px 0px 9px #DDDDDD;
+    }
+
+    .Table_list {
+        padding-top: 20px;
+    }
+
+    .Table_list pre {
+        padding: 5px 10px;
+    }
+
+    .Table_list .row {
+        /* height: 28px; */
+        line-height: 28px;
+        border-collapse: collapse;
+        border: 1px solid #ddd;
+        overflow: hidden;
+        margin-top: -1px;
+    }
+
+    .Table_list .th_left {
+        width: 248px;
+        text-align: right;
+        float: left;
+        padding: 2px 5px;
+        border-right: 1px solid #ddd;
+        margin-right: -1px;
+    }
+
+    .Table_list .th_right {
+        width: 680px;
+        text-align: left;
+        float: left;
+        border-left: 1px solid #ddd;
+        padding: 2px 5px;
+    }
+
+    .Table_list .next_inputbox .th_right {
+        width: 405px;
+    }
+
+    .login_table {
+        width: 500px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .login_table .row {
+        /* height: 28px; */
+        line-height: 32px;
+        border-collapse: collapse;
+        border: 1px solid #ddd;
+        overflow: hidden;
+        margin-top: -1px;
+    }
+
+    .login_table .th_left {
+        width: 100px;
+        text-align: right;
+        float: left;
+        padding: 2px 5px;
+    }
+
+    .login_table .code-img {
+        position: absolute;
+        height: 22px;
+        width: 60px;
+        top: 7px;
+        right: 52px;
+        font-style: oblique;
+        /*background: url(../LoginImg/valid-code.jpg);*/
+        cursor: pointer;
+        font-size: 14px;
+        word-spacing: 8px;
+        letter-spacing: 5px;
+        text-indent: 5px;
+        /* border: 1px solid #ddd; */
+        background-color: #fff;
+        line-height: 24px;
+    }
+
+    .content .login-form .code-img img {
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .Table_list .th_left .red {
+        color: #ff0000;
+        font-size: 16px;
+        vertical-align: top;
+    }
+
+    .login_table .th_right {
+        width: 350px;
+        text-align: left;
+        float: left;
+        border-left: 1px solid #ddd;
+        padding: 2px 5px;
+    }
+
+    .explain {
+        padding: 5px 10px;
+    }
+
+        .explain img {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+    input[type="text"],
+    input[type="date"] {
+        width: 400px;
+    }
+
+    select {
+        width: 204px;
+        padding: 2px 0;
+    }
+
+    .textlist select { 
+        padding: 0 5px;
+    }
+
+    textarea {
+        width: 600px;
+        height: 100px;
+        -webkit-appearance: none;
+    }
+
+
+    .btn_div {
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .login_table input[type="text"], .login_table input[type="password"] {
+        width: 300px;
+    }
+
+    .login_table .btn_div {
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+        .login_table .btn_div input {
+            margin-bottom: 0;
+            cursor: pointer
+        }
+}

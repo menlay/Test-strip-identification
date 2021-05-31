@@ -1,0 +1,76 @@
+﻿html, body {
+    height: 100%;
+}
+body {
+    background: url('../img/debg.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.container { 
+    margin: auto; 
+    box-sizing: border-box;
+}
+.pad {
+    padding: 8%;
+}
+
+    .pad .codebox {
+        border-radius: 0 0 6px 6px;
+        position: relative;
+        background: #fff;
+        box-sizing: border-box;
+        padding: 20px;
+        border-top: 1px dashed #333333;
+    }
+
+
+    .pad .codebox .codeimg {
+        margin: auto;
+        width: 200px;
+        height: 200px;
+    }
+
+        .pad .codebox .codeimg img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .pad .codebox .lb {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #00247e;
+            top: -10px;
+            left: -10px;
+        }
+
+        .pad .codebox .rb {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #00247e;
+            top: -10px;
+            right: -10px;
+        }
+
+    .pad .infos {
+        padding: 20px 40px;
+        border-radius: 6px 6px 0 0;
+        background: #fff; 
+    }
+    .pad .infos .title {
+        margin: 0 0 12px 0;
+        text-align: center;
+        color: #333333;
+        font-size: 26px;
+    }
+
+        .pad .infos .info {
+            color: #333333;
+            line-height: 30px;
+            font-size: 16px;
+            text-align: left;
+            font-weight: bold;
+        }
